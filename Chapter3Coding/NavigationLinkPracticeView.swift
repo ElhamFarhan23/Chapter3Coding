@@ -9,7 +9,19 @@ import SwiftUI
 
 struct NavigationLinkPracticeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack {
+                NavigationLink {
+                    HomeView()
+                } label: {
+                    Image(systemName:"book.pages.fill")
+                        .resizable()
+                        .frame(width :60.0,height:60.0)
+
+                }
+            }
+        }
+        
     }
 }
 

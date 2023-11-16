@@ -9,10 +9,23 @@ import SwiftUI
 
 struct SwiftUIView2: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        TabView {
+            
+            HomeView()
+            
+                .tabItem {
+                    Label("Books", systemImage: "books")
+                }
+        }
+        //Image(systemName: "books.vertical")
     }
-}
-
-#Preview {
-    SwiftUIView2()
+    
+    struct   SwiftUIView2_Previews: PreviewProvider {
+        static var previews: some View {
+            SwiftUIView2()
+            
+            
+        }
+    }
 }
