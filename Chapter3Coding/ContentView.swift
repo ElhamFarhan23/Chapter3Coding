@@ -12,10 +12,14 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
+       
+        
         ZStack {
-            Color.pink.ignoresSafeArea()
+            Color.orange.ignoresSafeArea()
+            
             
             VStack {
+                
                 
                 Image(systemName:"book.pages.fill")
                     .resizable()
@@ -48,9 +52,11 @@ struct ContentView: View {
                         
                     
                 }
+                
             }
             
     }
+        
         
     }
 }
@@ -59,7 +65,9 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
-}
-
     
-
+    
+    
+    
+    
+}

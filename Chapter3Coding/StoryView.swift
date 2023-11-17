@@ -13,13 +13,21 @@ struct StoryView: View {
             TabView{
                 ContentView()
                     .badge(0)
+                
                     .tabItem {
-                        Label("Chapter 3", systemImage: "home.fill")
+                        Image(systemName:"book.pages.fill")
+                            .resizable()
+                            .frame(width :60.0,height:60.0)
+                      
+                            
+                        
                     }
             }
         }
     }
 }
-#Preview {
-    StoryView()
+struct StoryView_Previews: PreviewProvider {
+    static var previews: some View {
+        StoryView()
+    }
 }
